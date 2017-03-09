@@ -13,7 +13,16 @@
             //- check connection and DB structure
 
             // Load current streams, substreams and tags
-            //$current_streams = SELECT COUNT (DISTINCT stream) FROM task_info
+            //$current_streams = SELECT DISTINCT stream FROM task_info;
+            //For $stream in $current_streams:
+
+            //##test version
+            $current_streams = ["work"=> ["bookings","reports"],
+                                "play" => ["dancing","socials","games"],
+                                "Level_Up" => ["Programming","fitness"]]
+            echo $current_streams
+
+
 
 
             //create stream
