@@ -8,7 +8,7 @@
 
         <?php
             echo "Hello, this will hold the modules for creating tasks and projects.";
-            echo "\n version 0";
+            echo "<br>version 0<br>";
 
             // connect to SQL Server
 
@@ -24,7 +24,6 @@
                                 "Level_Up" => ["Programming","fitness"]);
             print_r($current_streams);
             $tags = ["admin","email"];
-            echo "\n";
 
             //create stream
             /*function new_stream($streams,$stream_name)
