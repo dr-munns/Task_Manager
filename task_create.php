@@ -18,9 +18,10 @@
             //For $stream in $current_streams:
 
             //##test version
-            $current_streams = array("work"=> ["default","bookings","reports"],
-                                "play" => ["dancing","socials","games"],
-                                "Level_Up" => ["Programming","fitness"]);
+            $current_streams = array("work","play")
+              #"work"=> ["default","bookings","reports"],
+                                #"play" => ["dancing","socials","games"],
+                                #"Level_Up" => ["Programming","fitness"]);
             echo $current_streams;
             $tags = ["admin","email"];
 
