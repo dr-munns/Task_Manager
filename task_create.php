@@ -11,13 +11,11 @@
             echo "<br>version 0<br>";
 
             // connect to SQL Server
-
             //- check connection and DB structure
-
             // Load current streams, substreams and tags
             //$current_streams = SELECT DISTINCT stream FROM task_info;
             //For $stream in $current_streams:
-
+            //  SELECT DISTINCT substream FROM task_info;
             //##test version
             $current_streams = array("work"=> ["standard","bookings","reports"],
                                 "play" => ["dancing","socials","games"],
