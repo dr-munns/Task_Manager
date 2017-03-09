@@ -17,18 +17,22 @@
             //For $stream in $current_streams:
 
             //##test version
-            $current_streams = ["work"=> ["default","bookings","reports"],
+            $current_streams = array("work"=> ["default","bookings","reports"],
                                 "play" => ["dancing","socials","games"],
-                                "Level_Up" => ["Programming","fitness"]];
+                                "Level_Up" => ["Programming","fitness"]);
             echo $current_streams;
             $tags = ["admin","email"];
 
             //create stream
-            function new_stream($current_streams,$stream_name)
+            function new_stream($streams,$stream_name)
             {
-
+              if (bool array_key_exists(string $stream_name, array $streams)) {
+                echo "already exists";
+              } else {
+                $streams[$stream_name]= array();
+              }
             }
-
+            // newstream test
             //create substream
 
             //create task
