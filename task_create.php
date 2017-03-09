@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html>
     <head>
         <title>Example</title>
@@ -5,7 +6,7 @@
     <body>
 
         <?php
-            echo "Hello, this will setup Dr Munnns' task manager system";
+            echo "Hello, this will hold the modules for creating tasks and projects";
 
         ?>
 

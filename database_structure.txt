@@ -1,0 +1,22 @@
+Task info
+  o	task id
+  o	stream
+  o	goal
+  o	name
+  o	details
+  o	complete?
+  o	#tags
+  o	importance
+Task sorting (only for task allocation with multiple parties)
+  o	id
+  o	staff skills required
+  o	difficulty
+  o	value
+  o	offered to staff
+  o	assigned staff
+  o	scheduled time block
+session Log
+  o	task id
+  o	start date&time
+  o	stop date& time
+  o	progress at end of session
