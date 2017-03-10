@@ -44,6 +44,33 @@
             //create substream
 
             //create task
+            class task
+            {
+              public $stream;
+              public $substream;
+              public $name;
+              public $complete;
+              public $tags;
+
+
+              public function __construct($name,$stream,$substream,$tags=array(NULL))
+              {
+                $this->name = $name;
+                $this->complete = FALSE;
+                $this->stream = $stream;
+                $this->substream = $substream;
+                $this->tags = $tags;
+                //look up tasks in database to determine task ID Number
+                //save task to database
+
+              }
+
+            }
+            //task object test
+            $task1 = new task("email john","work","bookings");
+            echo "<br>".$task1->name;
+            echo $task1->stream;
+            var_dump( $task1->tags);
 
 
 
