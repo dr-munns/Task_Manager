@@ -32,6 +32,7 @@
                 $this->active_stream = "work";
                 $this->active_stream = "standard";
               }
+/*              public function newstream($stream_name)
               {
                 if (array_key_exists($stream_name, $this->existing_streams))
                 {
@@ -39,6 +40,7 @@
                   #return $streams;
                 } else {
                   $this->existing_streams[$stream_name]= array("standard");
+              }*/
             }
 
             //create task
