@@ -7,8 +7,8 @@
       $form.='<input type = "submit" name = "stream" value = '.$option.'>';
     }
     $form.='</form>';
-    return $form;
-    #return "test_string";
+    #return $form;
+    return "test_string";
   }
 
  ?>
