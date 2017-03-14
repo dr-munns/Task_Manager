@@ -10,14 +10,9 @@
   <html>
     <body>
       <form method="post" action="set_active.php" >
-      <br>
-      <?php
-        foreach($streams_all[0] as $stream)
-        {
-          <input type = "submit" name = "stream" value = $stream>
-        }
-      ?>
-      <br>
+      <br><input type="submit" name="stream" value = "work">
+      <input type="submit" name="stream" value="play"><br>
+
       </form>
     </body>
   </html>
