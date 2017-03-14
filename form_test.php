@@ -18,7 +18,7 @@ session_start();
       {
         echo "<br>post fuction<br>";
         echo $_POST['stream'];
-        $_SESSION['stream']=$_POST['stream'];
+        $_SESSION['stream']="test";
         echo $SESSION['stream'];
         /*
         if(isset($_SESSION["streams"]))
