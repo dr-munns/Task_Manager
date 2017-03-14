@@ -9,15 +9,16 @@ session_start();
       include TM_classes.php;
 
       if(!isset($_SESSION["streams"]))
-      {
+      /*{
         $streams = new stream_manager();
         $_SESSION["streams"]= serialize($streams);
         echo "new stream manager created";
-      }
+      }*/
       if(isset($_POST['stream']))
       {
         echo "<br>post fuction<br>";
         echo $_POST['stream'];
+        /*
         if(isset($_SESSION["streams"]))
         {
           $streams = unserialize($_SESSION["streams"]);
@@ -25,7 +26,7 @@ session_start();
           echo "session object version";
           echo $streams->active_stream;
           $_SESSION["streams"]= serialize($streams);
-        }
+        }*/
       }
 
     ?>
