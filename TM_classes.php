@@ -30,7 +30,15 @@
                                                 "Level_Up" => ["Programming","fitness"]);
 //get this to default to the zero indexed items.
                 $this->active_stream = "work";
-                $this->active_stream = "standard";
+                $this->active_substream = "standard";
+              }
+              public function set_active_stream($stream,$substream = NULL)
+              {
+                $this->active_stream = $stream;
+                if(!is_null($substream))
+                {
+                  $this->active_substream = $substream;
+                }
               }
 /*              public function newstream($stream_name)
               {

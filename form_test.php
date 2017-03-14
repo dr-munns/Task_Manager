@@ -1,10 +1,29 @@
+<?php
+session_start();
+ ?>
+
 <!DOCTYPE HTML>
 <html>
-<body>
-<?php
-if(isset($_POST['stream']))
-echo $_POST['stream'];
-?>
+  <body>
+    <?php
+      include TM_classes.php;
+      if(isset($_POST['stream']))
+      {
+        echo "<br>post fuction<br>";
+        echo $_POST['stream'];
+        if(isset($_SESSION["streams"]))
+        {
+          $streams = $_SESSION["streams"];
+          $streams->set_active_stream($_POST['stream']);
+          echo "session object version";
+          echo $streams->active_stream;
+        }
+      }
+      if(!isset($_SESSION["streams"]))
+      {
+        $streams = new stream_manager();
+      }
+    ?>
 
 <form method="post" action="form_test.php" >
 <br><input type="submit" name="stream" value = "work">
