@@ -1,13 +1,10 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>set_active_stream</title>
-    </head>
-    <body>
+<?php
+session_start();
 
-        <?php
-            echo $_POST["stream"];
-        ?>
+if(isset($_POST['stream']))
+{
+  echo $_POST['stream'];
+  $_SESSION['stream']=$_POST['stream'];
+}
 
-    </body>
-</html>
+ ?>
