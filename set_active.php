@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Example</title>
+        <title>set_active_stream</title>
     </head>
     <body>
 
