@@ -31,7 +31,7 @@
         <?php
         echo "pick stream";
         echo make_form($streams_all[0],$action = "set_active.php");
-        if(isset($active_stream))
+        if(!is_null($active_stream))
         {
           echo "active stream is:".$active_stream.'<br>';
           echo "pick substream:";
