@@ -5,6 +5,7 @@
   {
     #echo $_POST['stream'];
     $_SESSION['active_stream']=$_POST['stream'];
+    unset($_SESSION['active_substream']);
   }
   if(isset($_POST['substream']))
   {
