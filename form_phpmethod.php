@@ -1,5 +1,5 @@
 <?php
-  function make_form_stream($list, $action)
+  function make_form($list, $action)
   {
     $form = '<form method = "post" action = '.$action.'>';
     foreach($list as $option)
@@ -8,8 +8,15 @@
     }
     $form.='</form>';
     return $form;
-
-    #return "test_string";
   }
-
+  function make_form_substream($list, $action)
+  {
+    $form = '<form method = "post" action = '.$action.'>';
+    foreach($list as $option)
+    {
+      $form.='<input type = "submit" name = "substream" value = '.$option.'>';
+    }
+    $form.='</form>';
+    return $form;
+  }
  ?>

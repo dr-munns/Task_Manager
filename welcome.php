@@ -1,5 +1,6 @@
 <?php
   session_start();
+  session_unset();
   //set user name
   $_SESSION['user_name']="Jack";
 
