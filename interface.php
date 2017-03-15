@@ -15,7 +15,7 @@
         if(isset($_SESSION['active_stream'])){
           echo "active stream is ". $_SESSION['active_stream'].'<br>';
           $active_stream_no = array_search(
-            $_SESSION['active_stream'],$streams_all[0]);
+            $_SESSION['active_stream'],$streams_all[0])+1;
 
             echo make_form_substream($streams_all[$active_stream_no],"set_active.php");
         }
