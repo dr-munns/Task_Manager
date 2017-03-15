@@ -19,7 +19,7 @@
       </form>
 
         <?php
-        echo make_form($streams_all[0],"set_active.php","stream");
+        echo make_form($streams_all[0],"set_active.php");
 
          ?>
     </body>
