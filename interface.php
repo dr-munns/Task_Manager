@@ -29,16 +29,17 @@
     <body>
 
         <?php
+
         echo "pick stream";
-        echo make_form($streams_all[0],$action = "set_active.php");
+        echo make_form_stream($streams_all[0],$action = "set_active.php");
         if(isset($active_stream))
         {
           echo "active stream is:".$active_stream.'<br>';
-          echo "pick substream:";
-          var_dump($substream_list);
+          #echo "pick substream:";
+          #var_dump($substream_list);
           #echo make_form()
         }
-        echo make_form(array($streams_all[0]),"set_active.php");
+        #echo make_form(array($streams_all[0]),"set_active.php");
 
          ?>
     </body>
