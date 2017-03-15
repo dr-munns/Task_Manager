@@ -16,32 +16,40 @@
             //$current_streams = SELECT DISTINCT stream FROM task_info;
             //For $stream in $current_streams:
             //  SELECT DISTINCT substream FROM task_info;
-            //##test version
-            $current_streams = array("work"=> ["standard","bookings","reports"],
-                                "play" => ["dancing","socials","games"],
-                                "Level_Up" => ["Programming","fitness"]);
-            echo "starting streams <br>";
-            print_r($current_streams);
-            $tags = ["admin","email"];
 
-            //create stream
-            function new_stream(&$streams,$stream_name)
+            class stream_manager
             {
-              if (array_key_exists($stream_name, $streams)) {
-                echo "already exists";
-                #return $streams;
-              } else {
-                $streams[$stream_name]= array("standard");
-                #return $streams;
-              }
-            }
-            // newstream test
-            new_stream($current_streams, "BOB");
-            echo "<br>new set of streams<br>";
+              public $existing_streams;
+              public $active_stream;
+              public $active_substream;
 
-            print_r($current_streams);
-            #print_r($tags);
-            //create substream
+              public function __construct($test = TRUE)
+              {
+                $this->existing_streams = array("work"=> ["standard","bookings","reports"],
+                                                "play" => ["dancing","socials","games"],
+                                                "Level_Up" => ["Programming","fitness"]);
+//get this to default to the zero indexed items.
+                $this->active_stream = "work";
+                $this->active_substream = "standard";
+              }
+              public function set_active_stream($stream,$substream = NULL)
+              {
+                $this->active_stream = $stream;
+                if(!is_null($substream))
+                {
+                  $this->active_substream = $substream;
+                }
+              }
+/*              public function newstream($stream_name)
+              {
+                if (array_key_exists($stream_name, $this->existing_streams))
+                {
+                  echo "already exists";
+                  #return $streams;
+                } else {
+                  $this->existing_streams[$stream_name]= array("standard");
+              }*/
+            }
 
             //create task
             class task
