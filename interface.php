@@ -38,7 +38,6 @@
           var_dump($substream_list);
           #echo make_form()
         }
-        echo make_form(array($streams_all[0]),"set_active.php");
 
          ?>
     </body>
