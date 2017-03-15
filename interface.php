@@ -22,7 +22,7 @@
 
         if(isset($_SESSION['active_substream'])){
           #$active_substream = $_SESSION['active_substream'];
-          echo "active substream is ". $active_substream.'<br>';
+          echo "active substream is ". $_SESSION['active_substream'].'<br>';
         }
 
 
