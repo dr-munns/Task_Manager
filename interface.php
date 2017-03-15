@@ -14,7 +14,7 @@
     <body>
 
         <?php
-        echo make_form(array($streams_all[0]),"set_active.php");
+        echo make_form($streams_all[0],"set_active.php");
 
          ?>
     </body>
