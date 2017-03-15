@@ -20,7 +20,7 @@
 
         <?php
         if(isset($_SESSION['active_stream'])){
-          echo "active stream is " $_SESSION['active_stream'];
+          echo "active stream is ". $_SESSION['active_stream'].'<br>';
         }
 
         echo make_form($streams_all[0],"set_active.php");
