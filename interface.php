@@ -16,8 +16,11 @@
         if(isset($_SESSION['active_stream'])){
           echo "active stream is ". $_SESSION['active_stream'].'<br>';
         }
-
+        if(isset($_SESSION['active_substream'])){
+          echo "active substream is ". $_SESSION['active_substream'].'<br>';
+        }
         echo make_form($streams_all[0],"set_active.php");
+        echo make_form_substream($streams_all[1],"set_active.php");
 
          ?>
     </body>
