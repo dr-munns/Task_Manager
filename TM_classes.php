@@ -7,8 +7,8 @@
       <br>
 
         <?php
-            echo "Hello, this will hold the modules for creating tasks and projects.";
-            echo "<br>version 0<br>";
+            //echo "Hello, this will hold the modules for creating tasks and projects.";
+            //echo "<br>version 0<br>";
 
             // connect to SQL Server
             //- check connection and DB structure

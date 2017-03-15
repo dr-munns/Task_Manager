@@ -1,5 +1,3 @@
-//for the run-time code!
-//include 'filename.php';
 <!DOCTYPE HTML>
 <html>
     <head>
