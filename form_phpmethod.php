@@ -1,7 +1,7 @@
 <?php
-  function make_form($list)
+  function make_form($list, $action)
   {
-    $form = '<form method = "post" action = "set_active.php">';
+    $form = '<form method = "post" action = '.$action.'>';
     foreach($list as $option)
     {
       $form.='<input type = "submit" name = "stream" value = '.$option.'>';

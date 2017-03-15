@@ -18,7 +18,7 @@
 
         </form>
         <?php
-        echo make_form(array("buisness","pleasure"));
+        echo make_form(array($streams_all[0]));
 
          ?>
     </body>
