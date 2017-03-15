@@ -10,7 +10,7 @@
   $sub_1 = array("dance","reading","creative");
 
   //save list to session variable
-  $_SESSION['streams'] = array($stream_main,$sub_0,$sub_1);
+  $_SESSION['all_streams'] = array($stream_main,$sub_0,$sub_1);
   header('Location: interface.php');
   exit();
  ?>
