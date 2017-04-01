@@ -2,6 +2,7 @@
   $conn = new mysqli("localhost", "tm", "77ML5KFe", "Task_Manager");
 
   $name = htmlspecialchars($_POST["task name"]);
+  echo $_POST["due date"];
   $due = htmlspecialchars($_POST["due date"]);
   $task_id_num = '10';
 
