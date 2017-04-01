@@ -10,7 +10,7 @@
           $dbname = "Task_Manager";
 
           $conn = new mysqli($servername, $username, $password, $dbname);
-
+          /*$conn = new mysqli("localhost", "tm", "77ML5KFe", "Task_Manager");*/
           if ($conn->connect_error){
             echo "connoction failed:" . $conn->connect_error;
           }else{
