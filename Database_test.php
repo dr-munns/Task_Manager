@@ -3,6 +3,7 @@
     <body>
         <?php
           echo "this is the database test";
+          /*
           $servername = "localhost";
           $username = "tm";
           $password = "77ML5KFe";
@@ -21,6 +22,7 @@
           }else {
             echo "error:".$SQL."<br>".$conn->error;
           }
+          */
          ?>
        </body>
      </html>
