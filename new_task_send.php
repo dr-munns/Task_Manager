@@ -8,7 +8,11 @@
   echo "<br>";
   echo $due;
 
-  $SQL = "INSERT INTO Task_Info (name,due,fin,task_id) VALUES ($name, DATE $due,FALSE,$task_id_num)";
+  $SQL = "INSERT INTO Task_Info (name,due,fin,task_id) VALUES ('".
+                        $name.
+                        "', DATE '"
+                        .$due.
+                        "',FALSE,$task_id_num)";
 
   if($conn->query($SQL)===TRUE){
     echo "new task created sucesssfuly";
