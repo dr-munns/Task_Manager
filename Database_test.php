@@ -17,7 +17,7 @@
             echo "all good";
           }
 
-          $SQL = "INSERT INTO Task_Info (name,date,fin) VALUES ('test', DATE '2017-06-1',FALSE)";
+          $SQL = "INSERT INTO Task_Info (name,due,fin) VALUES ('test', DATE '2017-06-1',FALSE)";
           echo $SQL;
           if($conn->query($SQL)===TRUE){
             echo "new record created sucesssfuly";
