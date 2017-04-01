@@ -4,7 +4,9 @@
   $name = htmlspecialchars($_POST["task_name"]);
   $due = htmlspecialchars($_POST["due date"]);
   $task_id_num = '10';
-  echo $name.$due;
+  echo $name;
+  echo "<br>";
+  echo $due;
 
   $SQL = "INSERT INTO Task_Info (name,due,fin,task_id) VALUES ($name, DATE $due,FALSE,$task_id_num)";
 
