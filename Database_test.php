@@ -20,9 +20,10 @@
           $SQL_idnum = "SELECT COUNT(task_id) FROM Task_Info";
 
           $task_id = $conn->query($SQL_idnum);
-          var_dump ($task_id->fetch_assoc());
+          $result = $task_id->fetch_assoc();
+          var_dump ($result);
           $task_id_num = $task_id->fetch_assoc()['COUNT(task_id)'];
-          echo "<br>"."task num:".(string)$task_id_num;
+          echo "<br>"."task num:".$task_id_num;
 
 
           $SQL = "INSERT INTO Task_Info (name,due,fin) VALUES ('test', DATE '2017-06-1',FALSE)";
