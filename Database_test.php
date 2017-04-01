@@ -14,13 +14,13 @@
           if ($conn->connect_error){
             echo "connoction failed:" . $conn->connect_error;
           }else{
-            echo "all good";
+            echo "connection all good"."<br>";
           }
 
           $SQL_idnum = "SELECT COUNT(task_id) FROM Task_Info";
 
           $task_id = $conn->query($SQL_idnum);
-          echo $task_id;
+          var_dump ($task_id->fetch_assoc());
 
 
           $SQL = "INSERT INTO Task_Info (name,due,fin) VALUES ('test', DATE '2017-06-1',FALSE)";
@@ -30,7 +30,7 @@
           }else {
             echo "error:".$SQL."<br>".$conn->error;
           }
-
+          $conn->close();
          ?>
        </body>
      </html>
