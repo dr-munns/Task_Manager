@@ -21,7 +21,7 @@
 
           $task_id = $conn->query($SQL_idnum);
           var_dump ($task_id->fetch_assoc());
-          $task_id_num = $task_id->fetchassoc()["COUNT(task_id)"];
+          $task_id_num = $task_id->fetch_assoc()["COUNT(task_id)"];
           echo $task_id_num;
 
 
