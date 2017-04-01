@@ -9,7 +9,7 @@
           $password = "77ML5KFe";
           $dbname = "Task_Manager";
 
-          $conn = new mysqli($servername, $username, $password);
+          $conn = new mysqli($servername, $username, $password,$dbname);
                     /*
           if ($conn->connect_error){
             die("connoction failed:" . $conn->connect_error)
