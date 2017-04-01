@@ -17,17 +17,12 @@
             echo "connection all good"."<br>";
           }
 
-          $SQL_idnum = "SELECT COUNT(*) FROM Task_Info";
-
-          $task_id = $conn->query($SQL_idnum);
+          $task_id = $conn->query("SELECT COUNT(*) FROM Task_Info");
           $result = $task_id->fetch_assoc();
-          var_dump ($result);
           $task_id_num = $result['COUNT(*)'];
-          echo "<br>"."task num:".$task_id_num;
-
 
           $SQL = "INSERT INTO Task_Info (name,due,fin,task_id) VALUES ('test', DATE '2017-06-1',FALSE,$task_id_num)";
-          echo $SQL;
+
           if($conn->query($SQL)===TRUE){
             echo "new record created sucesssfuly";
           }else {
