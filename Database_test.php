@@ -14,7 +14,7 @@
           if ($conn->connect_error){
             echo("connoction failed:" . $conn->connect_error)
           }
-
+/*
           $SQL = "INSERT INTO
                               Task_Info (name,date,fin)
                               VALUES ('test', DATE '2017-06-1',FALSE)";
