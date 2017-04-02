@@ -23,7 +23,7 @@
         if(isset($_SESSION['active_substream'])){
           #$active_substream = $_SESSION['active_substream'];
           echo "active substream is ". $_SESSION['active_substream'].'<br>';
-          /*echo make_form_newtask();/*/
+          echo make_form_newtask();
         }
 
 
