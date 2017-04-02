@@ -35,7 +35,9 @@
         echo "who knows";
         $query_outcome = $conn->query($sql);
         echo "query problem...";
-        $task_list = $query_outcome->fetch_assoc();
+        while($row = $query_outcome->fetch_assoc()){
+          var_dump(row);
+        }
         echo "fetch problem";
         var_dump($task_list);
         echo "hello?";
