@@ -32,8 +32,7 @@
                   FROM Task_Info
                   WHERE fin = FALSE
                     AND stream = '" .$_SESSION['active_stream']."'";
-                    //AND substream = $_SESSION['active_substream']";
-          echo $SQL;
+                    AND substream = '" .$_SESSION['active_substream']."'";
           $query_outcome = $conn->query($SQL);
           while($row = $query_outcome->fetch_assoc()){
             echo make_form_task($row['name'],$row['task_id'])."<br>";
