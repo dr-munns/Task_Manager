@@ -33,7 +33,7 @@
   //should this be a string?
   {
     return '<form method = "post" action = "task.php">
-      <input type = "submit" name = "done" value = '.$id_no.'>
+      <input type = "submit" name = '.$id_no.' value = done>
     </form>';
   }
  ?>
