@@ -1,12 +1,14 @@
 <?php
   $conn = new mysqli("localhost", "tm", "77ML5KFe", "Task_Manager");
-  Var_dump($_POST);
+
   $name = htmlspecialchars($_POST["task_name"]);
   $due = $_POST["due_date"];
   $task_id_num = '10';
-  echo $name;
-  echo "<br>";
-  echo $due;
+
+  $task_id_find = $conn->query("SELECT COUNT(*) FROM Task_Info");
+  $result = $task_id_find->fetch_assoc();
+  $task_id_num = $result['COUNT(*)'];
+
 
   $SQL = "INSERT INTO Task_Info (name,due,fin,task_id) VALUES ('".
                         $name.
