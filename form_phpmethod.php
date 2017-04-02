@@ -19,7 +19,7 @@
     $form.='</form>';
     return $form;
   }
-/*  function make_form_newtask()
+  function make_form_newtask()
   {
     return '<form method = "post" action = "new_task_send.php">
       new task name: <br>
@@ -27,6 +27,6 @@
       due date: <br>
       <input type = "date" name = "due_date">
       <input type = "submit" value = "create task">
-    </form>'
-  }*/
+    </form>';
+  }
  ?>
