@@ -29,8 +29,7 @@
           echo "active substream is ". $_SESSION['active_substream'].'<br>';
           echo make_form_newtask();
         }
-        echo make_form_task('13');
-        $SQL = "SELECT name, task_id FROM Task_Info";
+        $SQL = "SELECT name, task_id FROM Task_Info WHERE fin = FALSE";
         $query_outcome = $conn->query($SQL);
         while($row = $query_outcome->fetch_assoc()){
           echo make_form_task($row['name'],$row['task_id'])."<br>";
