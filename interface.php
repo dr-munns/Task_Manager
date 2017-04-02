@@ -30,13 +30,10 @@
           echo make_form_newtask();
         }
         echo make_form_task('13');
-        echo "hello there?";
         $SQL = "SELECT name, task_id FROM Task_Info";
-        echo "who knows";
         $query_outcome = $conn->query($SQL);
-        echo "query problem...";
         while($row = $query_outcome->fetch_assoc()){
-          var_dump(row);
+          var_dump($row);
         }
         echo "fetch problem";
         var_dump($task_list);
