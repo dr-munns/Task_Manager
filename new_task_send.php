@@ -16,11 +16,9 @@
                         .$due.
                         "',FALSE,$task_id_num)";
 
-  if($conn->query($SQL)===TRUE){
-    echo "new task created sucesssfuly";
-  }else {
-    echo "error:".$SQL."<br>".$conn->error;
-  }
+  $conn->query($SQL);
 
   $conn->close();
+  header('Location: interface.php');
+  exit();
  ?>
