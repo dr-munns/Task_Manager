@@ -33,7 +33,7 @@
         echo "hello there?";
         $SQL = "SELECT name, task_id FROM Task_Info";
         echo "who knows";
-        $query_outcome = $conn->query($sql);
+        $query_outcome = $conn->query($SQL);
         echo "query problem...";
         while($row = $query_outcome->fetch_assoc()){
           var_dump(row);
