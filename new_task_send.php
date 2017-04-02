@@ -5,9 +5,9 @@
   $due = $_POST["due_date"];
   $task_id_num = '10';
 
-  $task_id_find = $conn->query("SELECT COUNT(*) FROM Task_Info");
+  $task_id_find = $conn->query("SELECT MAX(task_id) AS MaxID FROM Task_Info");
   $result = $task_id_find->fetch_assoc();
-  $task_id_num = $result['COUNT(*)'];
+  $task_id_num = $result['MaxID']+1;
 
 
   $SQL = "INSERT INTO Task_Info (name,due,fin,task_id) VALUES ('".
