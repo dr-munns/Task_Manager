@@ -5,6 +5,10 @@
 
   include "form_phpmethod.php";
   $conn = new mysqli("localhost", "tm", "77ML5KFe", "Task_Manager");
+  if($conn->connect_error)
+  {
+    echo "connection error".$conn->connect_error;
+  }
  ?>
 <!DOCTYPE HTML>
   <html>
@@ -32,7 +36,7 @@
         $task_list = $query_outcome->fetch_assoc();
         //echo all tasks
         var_dump($task_list);
-
+        echo "hello?";
          ?>
     </body>
   </html>
