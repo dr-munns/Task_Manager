@@ -4,7 +4,7 @@
   {
     $id_no = $_POST['done'];
     $SQL = "UPDATE Task_Info SET fin = TRUE WHERE task_id = ".$id_no;
-    echo $SQL;
+    //echo $SQL;
   }
 
   $conn->query($SQL);
