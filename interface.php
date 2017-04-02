@@ -30,9 +30,9 @@
           echo make_form_newtask();
           $SQL = "SELECT name, task_id
                   FROM Task_Info
-                  WHERE fin = FALSE
-                    AND stream = $_SESSION['active_stream']
-                    AND substream = $_SESSION['active_substream']";
+                  WHERE fin = FALSE"
+                    //AND stream = $_SESSION['active_stream']
+                    //AND substream = $_SESSION['active_substream']";
           $query_outcome = $conn->query($SQL);
           while($row = $query_outcome->fetch_assoc()){
             echo make_form_task($row['name'],$row['task_id'])."<br>";
