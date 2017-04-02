@@ -18,11 +18,11 @@
                           $name.
                           "', DATE '".
                           $due.
-                          "',FALSE,$task_id_num'".
+                          "',FALSE,$task_id_num,'".
                           $stream.
                           "','".
                           $substream.
-                          "')";    
+                          "')";
   }else{
     $SQL = "INSERT INTO Task_Info (name,due,fin,task_id) VALUES ('".
                           $name.
