@@ -33,7 +33,7 @@
         $SQL = "SELECT name, task_id FROM Task_Info";
         $query_outcome = $conn->query($SQL);
         while($row = $query_outcome->fetch_assoc()){
-          echo $row['name'].make_form_task($row['task_id'])."<br>";
+          echo make_form_task($row['name'],$row['task_id'])."<br>";
           //var_dump($row);
         }
 

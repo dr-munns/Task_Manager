@@ -29,11 +29,11 @@
       <input type = "submit" value = "create task">
     </form>';
   }
-  function make_form_task($id_no)
+  function make_form_task($name,$id_no)
   //should this be a string?
   {
-    return '<form method = "post" action = "task.php">
-      <input type = "submit" name = '.$id_no.' value = done>
+    return '<form method = "post" action = "task.php">'.
+      $name.'<input type = "submit" name = '.$id_no.' value = done>
     </form>';
   }
  ?>
