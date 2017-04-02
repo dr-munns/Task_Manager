@@ -12,6 +12,6 @@
 
   //save list to session variable
   $_SESSION['all_streams'] = array($stream_main,$sub_0,$sub_1);
-  header('Location: new_task.html');
+  header('Location: interface.php');
   exit();
  ?>
