@@ -25,7 +25,7 @@
           echo "active substream is ". $_SESSION['active_substream'].'<br>';
           echo make_form_newtask();
         }
-
+        echo make_form_task('13');
 
 
          ?>
