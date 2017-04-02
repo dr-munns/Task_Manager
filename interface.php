@@ -28,8 +28,8 @@
         echo make_form_task('13');
         //get tasks from SQL
         $SQL = 'SELECT name, task_id FROM Task_Info';
-        $task_list = $conn->query($SQL);
-
+        $query_outcome = $conn->query($SQL);
+        $task_list = $query_outcome->fetch_assoc;
         //echo all tasks
         var_dump($task_list);
 
