@@ -7,9 +7,9 @@
     echo $SQL;
   }
 
-  //$conn->query($SQL);
+  $conn->query($SQL);
 
-  //$conn->close();
+  $conn->close();
   //header('Location: interface.php');
   //exit();
  ?>
