@@ -31,7 +31,7 @@
           $SQL = "SELECT name, task_id
                   FROM Task_Info
                   WHERE fin = FALSE
-                    AND stream = $_SESSION['active_stream']";
+                    AND stream =" .$_SESSION['active_stream'];
                     //AND substream = $_SESSION['active_substream']";
           $query_outcome = $conn->query($SQL);
           while($row = $query_outcome->fetch_assoc()){
