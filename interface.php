@@ -4,7 +4,7 @@
   $streams_all = $_SESSION['all_streams'];
 
   include "form_phpmethod.php";
-
+  $conn = new mysqli("localhost", "tm", "77ML5KFe", "Task_Manager");
  ?>
 <!DOCTYPE HTML>
   <html>
@@ -26,7 +26,12 @@
           echo make_form_newtask();
         }
         echo make_form_task('13');
+        //get tasks from SQL
+        $SQL = 'SELECT name, task_id FROM Task_Info';
+        $task_list = $conn->query($SQL);
 
+        //echo all tasks
+        var_dump($task_list);
 
          ?>
     </body>
