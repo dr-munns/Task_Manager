@@ -3,7 +3,8 @@
   if(isset($_POST['done']))
   {
     echo $_POST['done'];
-    //$SQL = "UPDATE Task_Info SET fin = TRUE WHERE task_id = $_POST['done']";
+    $SQL = "UPDATE Task_Info SET fin = TRUE WHERE task_id = $_POST['done']";
+    echo $SQL;
   }
 
   //$conn->query($SQL);
